@@ -5,47 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evelyn Weather App</title>
     <style>
-        Body{
-            background: rgb(211, 214, 216);    
-            
-        }
-        .container{
-            background: rgb(10, 10, 10);
-            color: white;
-           
-        }
-        #city{
-            text-align: center;
-        }
-        #search-city{
-            background: grey;
-            padding: 20px;
-            border-radius: 20px;
-            color: black;
-            font-size: 1.5em;
-            border: none;
-        }
-        #search-label{
-            background: rgb(126, 126, 254);
-            padding:23px;
-            border-radius: 20px;
-            font-size: 1.1em;
-        }
+      Body {
+        background: rgb(211, 214, 216);
+      }
+      .container {
+        background: rgb(10, 10, 10);
+        color: white;
+        padding-bottom: 30px;
+        border-radius: 20px;
+      }
+      #city {
+        text-align: center;
+      }
+      #search-city {
+        background: rgb(50, 50, 50);
+        padding: 20px;
+        border-radius: 20px;
+        color: black;
+        font-size: 1.5em;
+        border: none;
+      }
+      #search-label {
+        background: rgb(126, 126, 254);
+        padding: 23px;
+        border-radius: 20px;
+        font-size: 1.1em;
+      }
+      .weather-dits {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+        padding-left: 30px;
+        border: 2px solid rgb(18, 18, 18);
+        border-radius: 15px;
+        background: rgb(50, 50, 50);
+      }
+      .dailycontainer {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .daily {
+        flex: 1;
+        background: rgb(50, 50, 50);
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
 
+      .daily:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .daily p {
+        margin: 5px 0;
+      }
+      footer {
+        padding: 15px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-        <h1 id="city">Cape Town</h1>
-    <div class="serch-input"><input type="text" id="search-city" placeholder="search for your city" />
-    <label id="search-label" for="search-city">Search</label></div>
-    <p id="weather-imoji">🌦️</p>
-    <p id="current-temp">20 / 17</p>
-    <p id="weather-details">Rainy- Cloudy</p>
-    <div class="weather-dits"><p id="wind">12 km/hr</p>
-    <p id="humidity">22%</p>
-    <p id="rain">72%</p></div>
-     <p>Thursday</p>
+      <h1 id="city">Cape Town</h1>
+      <div class="serch-input">
+        <input
+          type="text"
+          id="search-city"
+          placeholder="search for your city"
+        />
+        <label id="search-label" for="search-city">Search</label>
+      </div>
+      <p id="weather-imoji">🌦️</p>
+      <p id="current-temp">20 / 17</p>
+      <p id="weather-details">Rainy- Cloudy</p>
+      <div class="weather-dits">
+        <div class="wind-details">
+          <p class="wind-imoji">☀️</p>
+          <p id="wind">12 km/hr</p>
+          <p>Wind</p>
+        </div>
+        <div class="humidity-details">
+          <p class="humidity-imoji">💧</p>
+          <p id="humidity">22%</p>
+          <p>Humidity</p>
+        </div>
+
+        <div class="rain-details">
+          <p class="rain-imoji">🌦️</p>
+          <p id="rain">72%</p>
+          <p>Rain</p>
+        </div>
+      </div>
+      <div class="dailycontainer">
+        <div class="daily">
+          <p>Thursday</p>
 
           <p>☀️</p>
 
@@ -71,14 +130,17 @@
           <p>🌥️</p>
           <p><strong>15 &deg;C</strong>10 &deg; C</p>
         </div>
+      </div>
 
-    <footer>
-      Coded by
-      <a href="https://www.linkedin.com/in/evelyn-mwanunura-06a42a77/">Evelyn</a
-      >, code hosted on
-      <a href="https://github.com/EvelynMwanunura/EvelynWeatherApp">GitHub</a>
-      and website hosted on
-      <a href="https://evelynweatherapp.netlify.app/">Netlifly</a>.
-    </footer></div>
+      <footer>
+        Coded by
+        <a href="https://www.linkedin.com/in/evelyn-mwanunura-06a42a77/"
+          >Evelyn</a
+        >, code hosted on
+        <a href="https://github.com/EvelynMwanunura/EvelynWeatherApp">GitHub</a>
+        and website hosted on
+        <a href="https://evelynweatherapp.netlify.app/">Netlifly</a>.
+      </footer>
+    </div>
   </body>
 </html>
