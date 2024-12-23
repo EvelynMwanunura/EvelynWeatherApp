@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <style>
+      .container {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .todaysweather {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .tempcurrent {
+        display: block;
+      }
+      .search-container {
+        position: relative;
+        width: 400px;
+      }
+
+      .search-container input {
+        width: 100%;
+        padding: 10px 40px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .search-container .icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 18px;
+        color: #aaa;
+      }
+      .nexthrs {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        margin-top: 30px;
+      }
+      .forecast {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="imoji">🌦️ <strong>Sunny</strong></h3>
+
+      <div class="todaysweather">
+        <div class="tempcurrent">
+          <p class="temp"><span>26</span>&deg;C</p>
+          <p>H 29 &deg;C L 19 &deg;C</p>
+        </div>
+
+        <div class="city">
+          <p>
+            📍 Cape Town
+            <br />
+
+            🌥️Wind 4km/h
+            <br />
+            💧 Humidity 76%
+          </p>
+        </div>
+      </div>
+      <div class="search-container">
+        <span class="icon">🔍</span>
+
+        <input type="text" placeholder="Search for your city here..." />
+      </div>
+      <div class="nexthrs">
+        <div class="now">
+          <p>
+            Now
+            <br />
+            ☀️
+            <br />
+            26&deg;
+          </p>
+        </div>
+        <div class="nexthr">
+          <p>
+            19:00
+            <br />
+            ☀️
+            <br />
+            26&deg;
+          </p>
+        </div>
+        <div class="next1hr">
+          <p>
+            20:00
+            <br />
+            ☀️
+            <br />
+            26&deg;
+          </p>
+        </div>
+        <div class="next2hr">
+          <p>
+            21:00
+            <br />
+            ☀️
+            <br />
+            26&deg;
+          </p>
+        </div>
+        <div class="next3hr">
+          <p>
+            22:00
+            <br />
+            ☀️
+            <br />
+            26&deg;
+          </p>
+        </div>
+      </div>
+      <section class="forecast">
+        <div class="day">Today</div>
+        <div class="daysdetails">
+          <p>🌥️☀️30 &deg; C</p>
+        </div>
+        <div class="day">Tuesday</div>
+        <div class="daysdetails">
+          <p>🌥️☀️30 &deg; C</p>
+        </div>
+        <div class="day">Wednesday</div>
+        <div class="daysdetails">
+          <p>🌥️☀️30 &deg; C</p>
+        </div>
+        <div class="day">Thursday</div>
+        <div class="daysdetails">
+          <p>🌥️☀️30 &deg; C</p>
+        </div>
+        <div class="day">Friday</div>
+        <div class="daysdetails">
+          <p>🌥️☀️30 &deg; C</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
